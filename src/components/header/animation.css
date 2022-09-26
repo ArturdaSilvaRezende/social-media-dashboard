@@ -1,0 +1,37 @@
+.header__light-theme {
+    animation-name: lightTheme;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    }
+  
+@keyframes lightTheme {
+    0% { transform: translate(33px, -50%);}
+    100% {transform: translate(3px, -50%);}
+} 
+
+.header__dark-theme {
+    animation-name: darkTheme;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    }
+  
+@keyframes darkTheme {
+    0% {transform: translate(3px, -50%);}
+    100% { transform: translate(33px, -50%);}
+} 
+
+.toggleDark {
+    background: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+}
+.toggleDarkTextHover p:hover {
+    color: var(--White);
+}
+
+
+.toggleLight {
+    background-color: var(--Toggle-light);
+}
+.toggleLightHover:hover {
+    background: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+}
+    
